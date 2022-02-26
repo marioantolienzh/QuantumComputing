@@ -111,3 +111,22 @@ print(counts)
 
 plot_histogram(counts)
 
+
+
+
+
+#Representing Statevectors
+# Import Aer
+from qiskit import Aer
+
+# Run the quantum circuit on a statevector simulator backend
+backend = Aer.get_backend('statevector_simulator')
+# Create a Quantum Program for execution
+job = backend.run(circ)
+result = job.result()
+outputstate = result.get_statevector(circ, decimals=3)
+print(outputstate)
+from qiskit.visualization import plot_state_city
+plot_state_city(outputstate)
+
+
