@@ -2,7 +2,6 @@ import numpy as np
 from qiskit import QuantumCircuit, transpile
 from qiskit.providers.aer import QasmSimulator
 from qiskit.visualization import plot_histogram, array_to_latex
-from qiskit.providers.aer import QasmSimulator
 
 # Use Aer's qasm_simulator
 simulator = QasmSimulator()
