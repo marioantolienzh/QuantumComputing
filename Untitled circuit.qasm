@@ -1,3 +1,5 @@
+#Testing 5-qubit hadamard gate randomness for Qiskit (with limitations on less than 16 qbit measurements on IBM Quantum Composer)
+
 OPENQASM 2.0;
 include "qelib1.inc";
 
